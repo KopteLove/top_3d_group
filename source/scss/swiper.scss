@@ -1,0 +1,81 @@
+.swiper-container {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 25px;
+    left: auto;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+
+    @media (max-width: 380px) {
+      top: 58px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      width: 2px;
+      height: 15px;
+      background-color: #4D4D4D;
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+    border-radius: 0 5px 5px 0;
+
+    &::after {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 16px;
+      left: 18px;
+
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 7px;
+      left: 18px;
+    }
+  }
+
+  .swiper-button-prev {
+    right: 39px;
+    border-radius: 5px 0 0 5px;
+
+    @media (max-width: 380px) {
+      right: auto;
+      left: 0;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 16px;
+      left: 17px;
+
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 7px;
+      left: 17px;
+    }
+  }
+
+  .swiper-header {
+    margin-top: 13px;
+    margin-bottom: 50px;
+
+    @media (max-width: 380px) {
+      text-align: center;
+    }
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
