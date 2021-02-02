@@ -135,7 +135,7 @@
 
   @each $socials in telegram, skype, phone {
     &--#{$socials} {
-      background: url("../img/#{$socials}.png") no-repeat;
+      background: url("../img/#{$socials}.svg") no-repeat;
     }
   }
 }
